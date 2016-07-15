@@ -1,12 +1,65 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="mx.evisoft.formulariocontacto.DespliegueDeDatos">
+    tools:context="mx.evisoft.formulariocontacto.DespliegueDeDatos"
+    android:orientation="vertical"
+    android:padding="@dimen/padding_app"
+    >
 
-</RelativeLayout>
+    <TextView
+        android:id="@+id/tvTitulo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/tamano_titulo"
+        android:textAlignment="center"
+        android:text="@string/tv_titulo_confirmar" />
+
+    <TextView
+        android:id="@+id/tvNombreCompleto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margen_textos"
+        android:textSize="@dimen/tamano_textos"/>
+
+    <TextView
+        android:id="@+id/tvCumpleanos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margen_textos"
+        android:textSize="@dimen/tamano_textos"/>
+
+    <TextView
+        android:id="@+id/tvTelefono"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margen_textos"
+        android:textSize="@dimen/tamano_textos"/>
+
+    <TextView
+        android:id="@+id/tvEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margen_textos"
+        android:textSize="@dimen/tamano_textos"/>
+
+    <TextView
+        android:id="@+id/tvDescripcion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margen_textos"
+        android:textSize="@dimen/tamano_textos"/>
+
+    <Button
+        android:id="@+id/btnEditar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:text="@string/btn_editar"
+        android:layout_marginTop="@dimen/margen_boton"/>
+
+
+
+
+</LinearLayout>

@@ -31,6 +31,12 @@ public class DatosDeEntrada extends AppCompatActivity {
 
     private Button btnSiguiente;
 
+    String nombreCompleto;
+    String cumpleanos;
+    String telefono;
+    String email;
+    String descripcion;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -38,21 +44,49 @@ public class DatosDeEntrada extends AppCompatActivity {
 
         buscarVistas();
 
+        obtenerIntent();
+
+        setTextos();
+
         tvCumpleanos.setInputType(InputType.TYPE_NULL);
 
         crearCalendario();
 
         onClicks();
 
+
+
     }
 
     private void buscarVistas(){
-        tvNombreCompleto = (EditText) findViewById(R.id.tvNombreCompleto);
-        tvCumpleanos = (EditText) findViewById(R.id.tvCumpleanos);
-        tvTelefono = (EditText) findViewById(R.id.tvTelefono);
-        tvEmail = (EditText) findViewById(R.id.tvEmail);
-        tvDescripcion = (EditText) findViewById(R.id.tvDescripcion);
+        tvNombreCompleto = (EditText) findViewById(R.id.editNombreCompleto);
+        tvCumpleanos = (EditText) findViewById(R.id.editCumpleanos);
+        tvTelefono = (EditText) findViewById(R.id.editTelefono);
+        tvEmail = (EditText) findViewById(R.id.editEmail);
+        tvDescripcion = (EditText) findViewById(R.id.editDescripcion);
         btnSiguiente = (Button) findViewById(R.id.btnSiguiente);
+    }
+
+    private void obtenerIntent(){
+        Intent intent = getIntent();
+        Bundle extras = intent.getExtras();
+
+        if(extras != null){
+            nombreCompleto = extras.getString(getResources().getString(R.string.param_nombre_completo));
+            cumpleanos = extras.getString(getResources().getString(R.string.param_cumpleanos));
+            telefono = extras.getString(getResources().getString(R.string.param_telefono));
+            email = extras.getString(getResources().getString(R.string.param_email));
+            descripcion = extras.getString(getResources().getString(R.string.param_descripcion));
+        }
+
+    }
+
+    private void setTextos(){
+        tvNombreCompleto.setText(nombreCompleto);
+        tvCumpleanos.setText(cumpleanos);
+        tvTelefono.setText(telefono);
+        tvEmail.setText(email);
+        tvDescripcion.setText(descripcion);
     }
 
     private void crearCalendario(){

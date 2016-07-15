@@ -1,13 +1,22 @@
 <resources>
     <string name="app_name">Formulario Contacto</string>
 
+    <!-- Pantalla Datos de Entrada  -->
+    <!-- Placeholders -->
     <string name="ph_nombre_completo">Nombre completo</string>
     <string name="ph_cumpleanos">Fecha de Nacimiento</string>
     <string name="ph_telefono">Teléfono</string>
     <string name="ph_email">Email</string>
     <string name="ph_descripcion">Descripción de Contacto</string>
+
+    <!-- Boton -->
     <string name="btn_siguiente">Siguiente</string>
 
+    <!-- Pantalla despliegue de datos -->
+    <string name="tv_titulo_confirmar">Confirmar Datos</string>
+    <string name="btn_editar">Editar Datos</string>
+
+    <!-- Parametros -->
     <string name="param_nombre_completo">nombre</string>
     <string name="param_cumpleanos">cumple</string>
     <string name="param_telefono">telefono</string>

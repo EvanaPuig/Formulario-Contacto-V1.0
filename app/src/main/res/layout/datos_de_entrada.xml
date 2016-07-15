@@ -14,12 +14,13 @@
         >
 
         <android.support.design.widget.TextInputLayout
-            android:id="@+id/tvNombreCompleto"
+
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:padding="@dimen/padding_app">
 
             <android.support.design.widget.TextInputEditText
+                android:id="@+id/editNombreCompleto"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="@string/ph_nombre_completo"/>
@@ -32,7 +33,7 @@
             android:padding="@dimen/padding_app">
 
             <EditText
-                android:id="@+id/tvCumpleanos"
+                android:id="@+id/editCumpleanos"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="@string/ph_cumpleanos"/>
@@ -40,12 +41,12 @@
         </android.support.design.widget.TextInputLayout>
 
         <android.support.design.widget.TextInputLayout
-            android:id="@+id/tvTelefono"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:padding="@dimen/padding_app">
 
-            <android.support.design.widget.TextInputEditText
+            <EditText
+                android:id="@+id/editTelefono"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="@string/ph_telefono"/>
@@ -53,12 +54,12 @@
         </android.support.design.widget.TextInputLayout>
 
         <android.support.design.widget.TextInputLayout
-            android:id="@+id/tvEmail"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:padding="@dimen/padding_app">
 
-            <android.support.design.widget.TextInputEditText
+            <EditText
+                android:id="@+id/editEmail"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="@string/ph_email"/>
@@ -66,12 +67,12 @@
         </android.support.design.widget.TextInputLayout>
 
         <android.support.design.widget.TextInputLayout
-            android:id="@+id/tvDescripcion"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:padding="@dimen/padding_app">
 
-            <android.support.design.widget.TextInputEditText
+            <EditText
+                android:id="@+id/editDescripcion"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="@string/ph_descripcion"/>
